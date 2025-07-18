@@ -14,7 +14,7 @@ Few-Shot Medical Image Segmentation (**FSMIS**) aims to achieve precise segmenta
 
 <h3>Overview of training</h3>
 <p align="center">
-	<img src="./training.png" width="90%"/>
+	<img src="https://github.com/xubin471/BePMI/blob/main/training.png?raw=true" width="90%"/>
 </p>
 
 <h3>Overview of inference</h3>
