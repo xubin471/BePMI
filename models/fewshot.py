@@ -449,7 +449,7 @@ class FewShotSeg(nn.Module):
                            range(len(qry_fts))]
             protos_corr = torch.tensor(protos_corr).cuda()
             # protos_corr = torch.softmax(protos_corr, dim=0)
-            protos_corr = torch.sigmoid(protos_corr*0.5)-0.4
+            protos_corr = torch.sigmoid(protos_corr)-0.3
 
             score_max_index = torch.argmin(protos_corr, dim=0)
 
