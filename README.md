@@ -73,7 +73,22 @@ Supervoxel segmentation is performed according to [Hansen et al.](https://github
 ## Inference
 Run `./scripts/adb_mri_val.sh`
 
+## Visualization
+We provide the python file under `visual/` to visualize the segmentation results on the datasets of Abd-MRI, Abd-CT, CMR and Prostate-MRI respectively.
+For example, in order to visualize the segmentation results of Abd-MRI dataset. 
+We first construct the structure as follows:
+```
+visual
+├── Abd_MRI
+│   ├── img
+│   │   ├── BePMI
+│   │   ├── init
+│   └── show_mri_2.py
 
+```
+We store the image and the label under `visual/Abd_MRI/img/init`.
+Then we puts segmentation results conducted by our trained model into `visual/Abd_MRI/img/BePMI`.
+Finally, run `python visual/Abd_MRI/show_mri_2.py` and the visualized images(.png) are put into `visual/Abd_MRI/sample`.
 
 # Acknowledgement
 
