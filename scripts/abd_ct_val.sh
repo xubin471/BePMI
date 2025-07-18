@@ -56,7 +56,7 @@ do
          path.log_dir=$LOGDIR
       done
 
-      value=$(<results.txt)
+      value=$(<results_iter.txt)
       sum=$(echo "$sum + $value" | bc)
 
   done
