@@ -38,7 +38,7 @@ do
       fi
       for SUPP_IDX in "${ALL_SUPP[@]}"
       do
-         RELOAD_MODEL_PATH="/home/su/xb/BePMI_origin/setting1_05_31_exps_on_${DATASET}/rb_train_${DATASET}_cv${EVAL_FOLD}/1/snapshots/${id}.pth"
+         RELOAD_MODEL_PATH="BePMI_exps_on_${DATASET}/rb_train_${DATASET}_cv${EVAL_FOLD}/1/snapshots/${id}.pth"
          python test_iter.py with \
          mode="test" \
          dataset=$DATASET \
