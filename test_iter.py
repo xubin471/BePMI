@@ -124,7 +124,7 @@ def main(_run, _config, _log):
                 idx_ = np.linspace(0, C_q, _config['n_part'] + 1).astype('int')
 
                 for sub_chunck in range(_config['n_part']):
-                    print(f"idx_:{idx_},   sub_chunck:{sub_chunck}")
+                    # print(f"idx_:{idx_},   sub_chunck:{sub_chunck}")
                     support_image_s = [support_image[sub_chunck]]  # 1 x 3 x H x W
                     support_fg_mask_s = [support_fg_mask[sub_chunck]]  # 1 x H x W
                     query_image_s = query_image[0][idx_[sub_chunck]:idx_[sub_chunck + 1]]  # C' x 3 x H x W
