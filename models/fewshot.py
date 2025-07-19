@@ -4,13 +4,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from models.encoder import Res101Encoder
-from models.decoder import MLP, Decoder, Supp_Decoder
+from models.decoder import MLP, Decoder
 import numpy as np
 import random
 import cv2
 from boundary_loss import BoundaryLoss
 from .prototype import Prototype
-from .attention import CrossProtoAttention
 from .attention import Channel_att as Channel_att
 from .util import kmeans
 import matplotlib.pyplot as plt
