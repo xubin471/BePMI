@@ -85,7 +85,7 @@ visual
 ```
 We store the image and the label under `visual/Abd_MRI/img/init`.
 Then we puts segmentation results conducted by our trained model into `visual/Abd_MRI/img/BePMI`.
-Finally, run `python visual/Abd_MRI/show_mri_2.py` and the visualized images(.png) are put into `visual/Abd_MRI/sample`.
+Finally, run `python show_mri_2.py` and the visualized images(.png) are put into `visual/Abd_MRI/sample`.
 
 # Acknowledgement
 
