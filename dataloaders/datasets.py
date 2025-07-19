@@ -163,7 +163,6 @@ class TrainDataset(Dataset):
                 self.images[image_dir] = sitk.GetArrayFromImage(sitk.ReadImage(image_dir))
                 self.labels[label_dir] = sitk.GetArrayFromImage(sitk.ReadImage(label_dir))
                 self.sprvxls[sprvxl_dir] = sitk.GetArrayFromImage(sitk.ReadImage(sprvxl_dir))
-            # 总共获得20组数据，每一组数据包含原3D图、掩码3D图、
     def __len__(self):
         return self.max_iter
 
