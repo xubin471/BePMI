@@ -1,0 +1,12 @@
+# data
+data/**/*.nii.gz
+data/**/*.json
+
+checkpoint/*.pth
+
+# visual
+visual/**/*.nii.gz
+visual/**/*.png
+
+# models
+models/__pycache__/*
