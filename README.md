@@ -39,6 +39,9 @@ scikit-image==0.18.3
 SimpleITK==2.5.2
 torch==2.4.1
 torchvision==0.19.1
+matplotlib==3.7.5
+scipy==1.10.1
+
 ```
 
 
