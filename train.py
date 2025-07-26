@@ -120,6 +120,20 @@ def main(_run, _config, _log):
                                                          1 - torch.finfo(torch.float32).eps)), query_labels)
 
             loss = query_loss + align_loss + aux_loss + b_loss + ssp_loss
+            """
+            import matplotlib.pyplot as plt
+            row = 1
+            col = 2
+            plt.subplot(row, col, 1)
+            plt.imshow(torch.argmax(query_pred,dim=1)[0].cpu().detach().numpy())
+            
+            plt.subplot(row, col, 2)
+            plt.imshow(query_labels[0].cpu().detach().numpy())
+            
+            plt.show()
+            
+        
+            """
 
             # Compute gradient and do SGD step.
             for param in model.parameters():
@@ -155,6 +169,7 @@ def main(_run, _config, _log):
                 total_loss = log_loss['total_loss'] / _config['print_interval']
                 query_loss = log_loss['query_loss'] / _config['print_interval']
                 align_loss = log_loss['align_loss'] / _config['print_interval']
+                aux_loss = log_loss['aux_loss'] / _config['print_interval']
                 b_loss = log_loss['b_loss'] / _config['print_interval']
                 ssp_loss = log_loss['ssp_loss'] / _config['print_interval']
 
