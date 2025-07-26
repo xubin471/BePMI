@@ -18,8 +18,8 @@ SEED=2025
 
 N_PART=3 # defines the number of chunks for evaluation
 ALL_SUPP=(2) # CHAOST2: 0-4, CMR: 0-7
-model_id=(42000)
-#model_id=($(seq 50000 -1000 30000))
+#model_id=(42000)
+model_id=($(seq 50000 -1000 30000))
 output_file="sum_values.txt"
 echo ========================================================================
 
