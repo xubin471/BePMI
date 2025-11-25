@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>Few-Shot Medical Image Segmentation via Boundary-extended Prototype and Momentum Inference </h1>
+<h1>[CVIU'26] Few-Shot Medical Image Segmentation via Boundary-extended Prototype and Momentum Inference  </h1>
 
 </div>
 
@@ -87,12 +87,24 @@ visual
 
 ```
 We store the image and the label under `visual/Abd_MRI/img/init`.
-Then we puts segmentation results conducted by our trained model into `visual/Abd_MRI/img/BePMI`.
+Then we put segmentation results conducted by our trained model into `visual/Abd_MRI/img/BePMI`.
 Finally, run `python show_mri_2.py` and the visualized images(.png) are put into `visual/Abd_MRI/sample`.
 
 # Acknowledgement
 
 Our code is based the works: [SSL-ALPNet](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation), [ADNet](https://github.com/sha168/ADNet) and [QNet](https://github.com/ZJLAB-AMMI/Q-Net).
 
+# Citation
+If you find our work useful in your research, please consider citing:
+```
+@article{XU2026104571,
+title = {Few-shot Medical Image Segmentation via Boundary-extended Prototypes and Momentum Inference},
+author = {Bin Xu and Yazhou Zhu and Shidong Wang and Yang Long and Haofeng Zhang},
+journal = {Computer Vision and Image Understanding},
+volume = {263},
+pages = {104571},
+year = {2026}
+}
+```
 
 
