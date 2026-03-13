@@ -4,7 +4,7 @@
 
 </div>
 
-Paper: [Paper](https://www.sciencedirect.com/science/article/pii/S1077314225002942#tbl6)
+Paper: [Few-Shot Medical Image Segmentation via Boundary-extended Prototype and Momentum Inference](https://www.sciencedirect.com/science/article/pii/S1077314225002942#tbl6)
 # Abstract
 
 Few-Shot Medical Image Segmentation (**FSMIS**) aims to achieve precise segmentation of different organs using minimal annotated data. Current prototype-based FSMIS methods primarily extract prototypes from support samples through random sampling or local averaging. However, due to the extremely small proportion of boundary features, traditional methods have difficulty generating boundary prototypes, resulting in poorly delineated boundaries in segmentation results. Moreover, their reliance on a single support image for segmenting all query images leads to significant performance degradation when substantial discrepancies exist between support and query images. To address these challenges, we propose an innovative solution comprising two key modules:  a Boundary-extended Prototypes (**BePro**) module and a Momentum Inference (**MoIf**) module. BePro constructs boundary prototypes by explicitly clustering the internal and external boundary features to alleviate the problem of boundary ambiguity. MoIf employs the spatial consistency of adjacent slices in 3D medical images to dynamically optimize the prototype representation, thereby reducing the reliance on a single sample. Extensive experiments on three publicly available medical image datasets  demonstrate that our method outperforms the state-of-the-art methods.
@@ -107,6 +107,7 @@ pages = {104571},
 year = {2026}
 }
 ```
+
 
 
 
